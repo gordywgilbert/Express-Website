@@ -7,6 +7,14 @@ app.use(express.static('./public'));
 
 // todo: add routes to express for your AJAX requests / server-side calls
 
+app.get('/users', function(req,res) {
+    // example of sending data back from the server. this could have been from a database
+    res.send([
+        { name: 'Gordy', age : 30 },
+        { name: 'Lanzer', age : 55}
+    ])
+});
+
 // start server
 var port = 3000;
 app.listen(port, function () {
