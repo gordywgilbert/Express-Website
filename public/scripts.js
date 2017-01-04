@@ -14,6 +14,7 @@ function getUsers() {
 
             // for each user...
             for(var i = 0; i < users.length; i++) {
+                // build some HTML ... usually want to use a framework, building HTML in javascript is bad practice
                 usersDiv.innerHTML += '<p>' + users[i].name + ', age ' + users[i].age + '</p>';
             }
         } else {
