@@ -1,6 +1,53 @@
-html {
-    font-size: 16px;
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    margin: 15px;
 }
+
+.icon-work {
+    background-image: url(img/briefcase-64.png);
+    display: block;
+    height: 64px;
+    width: 64px;
+}
+
+.icon-skills {
+    background-image: url(img/desktop-64.png);
+    display: block;
+    height: 64px;
+    width: 64px;
+}
+
+.icon-education {
+    background-image: url(img/diploma-64.png);
+    display: block;
+    height: 64px;
+    width: 64px;
+}
+
 h1 {
-    font-size: 5em;
+    font-size: 1.5em;
+}
+
+.work-experience > ul li {
+    padding-bottom: .7em;
+}
+
+html, html > .outside-section {
+    background-color: #5DA4D9;
+}
+
+.objective, .work-experience, .skills, .education {
+    background-color: #FFF;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 24px;
+    padding: 10px 15px 15px;
+}
+
+div.icon-work h1, div.skills h1, div.education h1 {
+    float: left;
+    margin-left: 84px;
+    margin-top: 20px;
+    white-space: nowrap;
 }
